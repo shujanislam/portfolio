@@ -1,7 +1,7 @@
-import Navbar from './Navbar.tsx';
-import HeroSection from './HeroSection.tsx';
-import Projects from './Projects.tsx';
-import Footer from './Footer.tsx';
+import Navbar from './Navbar';
+import HeroSection from './HeroSection';
+import Projects from './Projects';
+import Footer from './Footer';
 
 const MainSection = () => {
   return (
