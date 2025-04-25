@@ -15,7 +15,6 @@ const Footer = () => {
       <div>
         <p className="font-bold mb-2">Quick Links</p>
         <ul className="space-y-1">
-          <li><a href="#home" className="hover:underline">Home</a></li>
           <li><a href="#about" className="hover:underline">About</a></li>
           <li><a href="#projects" className="hover:underline">Projects</a></li>
           <li><a href="#experience" className="hover:underline">Experience</a></li>
@@ -28,7 +27,7 @@ const Footer = () => {
         <ul className="space-y-1">
           <li><a href="#contact" className="hover:underline">Contact</a></li>
           <li><a href="#blog" className="hover:underline">Blog</a></li>
-          <li><a href="#resume" className="hover:underline">Resume</a></li>
+          <li><a href="https://drive.google.com/file/d/1tMy7VASt5ZMwGQTidx0MHvcv8lDgaFed/view?usp=sharing" target="_blank" className="hover:underline">Resume</a></li>
         </ul>
       </div>
 

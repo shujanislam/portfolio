@@ -2,7 +2,7 @@ const Experience = () => {
   const experiences = [
     {
       company: "VrixaaLabs Pvt Ltd",
-      position: "Backend Developer",
+      position: "Web Developer Intern",
       duration: "May 2025 - Present",
       color: "bg-red-300",
     },
