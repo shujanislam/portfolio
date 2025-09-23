@@ -39,26 +39,45 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="w-[90%] mx-auto py-12" id="projects">
-      <div className="text-center mb-8">
-        <p className="text-3xl font-bold">Here's what I have done recently</p>
+    <section id="projects" className="w-full max-w-6xl mx-auto py-20 px-6">
+      {/* Title */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+          Here&apos;s what I&apos;ve built recently
+        </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Project Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div
+          <a
             key={index}
-            className="border-2 border-black rounded-xl bg-white p-6 shadow-[4px_4px_0_0_#000]"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative rounded-2xl p-6 
+              bg-white/10 border border-white/20 backdrop-blur-md
+              transition-all hover:scale-105 hover:shadow-xl"
           >
-            <a href={project.link} target="_blank" className="text-decoration-none">
-              <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-              <p className="text-sm font-semibold text-gray-700 mb-2">Tech Stack: {project.stack}</p>
-              <p className="text-sm text-gray-800">{project.description}</p>
-            </a>
-          </div>
+            <h3
+              className="text-xl font-semibold mb-2 
+              bg-gradient-to-r from-indigo-300 to-blue-400 bg-clip-text text-transparent"
+            >
+              {project.name}
+            </h3>
+            <p className="text-sm text-white/70 mb-3 font-medium">
+              Tech Stack: {project.stack}
+            </p>
+            <p className="text-sm text-white/80 leading-relaxed">
+              {project.description}
+            </p>
+
+            {/* Subtle hover glow */}
+            <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-400/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+          </a>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
