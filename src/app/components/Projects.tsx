@@ -1,8 +1,8 @@
 const projects = [
   {
-    name: "CodeRank",
-    link: "https://github.com/shujanislam/CodeRank",
-    stack: "ReactJS, Tailwind CSS, ExpressJS, Kafka, Docker",
+    name: "TBNet",
+    link: "https://github.com/shujanislam/TBNet",
+    stack: "NextJS, Tailwind CSS, ExpressJS, FastAPI, Python",
     description: "An online platform to write and run code with test cases, similar to HackerRank.",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     description: "A smart AI based educational website to create a perfect study environment for you.",
   },
   {
-    name: "Code Executor",
+    name: "Code Rank",
     link: "https://github.com/shujanislam/CodeRank",
     stack: "React, Docker, Kafka",
     description: "An online platform to write and run code with test cases, similar to HackerRank.",
