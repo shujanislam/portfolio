@@ -24,18 +24,6 @@ const projects = [
     description: "A real-time chat application with private messaging and emoji support with built-in AI chatbot.",
   },
   {
-    name: "SOLIT",
-    link: "#",
-    stack: "Next.js, PostgreSQL, ExpressJS",
-    description: "A full-featured and automated fee management system with admin/student panel.",
-  },
-  {
-    name: "ShellNU",
-    link: "https://github.com/shujanislam/ShellNU",
-    stack: "C++",
-    description: "A linux-based cross-platform terminal emulator.",
-  },
-  {
     name: "LearnSmart",
     link: "https://github.com/shujanislam/hackvita-2025",
     stack: "ReactJS, ExpressJS, PostgreSQL, Redis, Gemini API",
