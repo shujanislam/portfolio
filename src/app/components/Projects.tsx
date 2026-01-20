@@ -1,5 +1,17 @@
 const projects = [
   {
+    name: "NextFasterAnalytics",
+    link: "https://github.com/shujanislam/NextFasterAnalytics",
+    stack: "NextJS, Tailwind CSS, PostgreSQL",
+    description: "A blazingly fast analytics page for NextFaster web application",
+  },
+  {
+    name: "dev-ai-sdk",
+    link: "https://github.com/shujanislam/dev-ai-sdk",
+    stack: "TypeScript",
+    description: "A TypeScript SDK that streamlines integrating AI-powered workflows into existing applications, providing composable abstractions, tools, and utilities.",
+  },
+  {
     name: "TBNet",
     link: "https://github.com/shujanislam/TBNet",
     stack: "NextJS, Tailwind CSS, ExpressJS, FastAPI, Python",
