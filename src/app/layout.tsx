@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shujan Islam | Official Website",
+  title: "Shujan Islam",
   description: "",
 };
 
