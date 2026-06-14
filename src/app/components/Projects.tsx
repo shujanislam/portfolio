@@ -42,7 +42,7 @@ const Projects = () => {
     <section id="projects" className="w-full max-w-6xl mx-auto py-20 px-6">
       {/* Title */}
       <div className="text-center mb-12">
-      <h2 className="text-xl sm:text-xl font-bold text-left mb-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+      <h2 className="text-xl sm:text-xl font-bold text-left mb-12 text-blue-400 bg-clip-text ">
        Projects 
       </h2>
       </div>
@@ -72,7 +72,7 @@ const Projects = () => {
             </svg>
             <h3
               className="pr-8 text-xl font-semibold mb-2 
-              bg-gradient-to-r from-indigo-300 to-blue-400 bg-clip-text text-transparent"
+              text-blue-400 bg-clip-text"
             >
               {project.name}
             </h3>
