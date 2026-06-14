@@ -1,50 +1,43 @@
 const Experience = () => {
   const experiences = [
     {
+      company: "Atomity",
+      position: "Frontend Engineer Intern",
+      duration: "June 2026 - Present",
+      color: "bg-white",
+    },
+    {
       company: "VrixaaLabs Pvt Ltd",
       position: "Full-Stack Web Developer Intern",
       duration: "May 2025 - Present",
-      color: "from-red-400 to-pink-500",
+      color: "bg-gray-400",
     },
     {
       company: "Google Developers Group",
-      position: "Full-Stack Web Developer",
+      position: "Development Lead",
       duration: "March 2024 - Present",
-      color: "from-yellow-400 to-orange-400",
+      color: "bg-gray-400",
     },
   ];
 
   return (
     <section id="experience" className="w-full max-w-6xl mx-auto py-20 px-6">
-      {/* Section Title */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+      <h2 className="text-xl sm:text-xl font-bold text-left mb-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
         Experience
       </h2>
 
-      {/* Experience Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="relative flex flex-col gap-10 pl-8 before:absolute before:left-2 before:top-2 before:h-full before:w-px before:bg-white/25">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="relative p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md
-              transition-all hover:scale-105 hover:shadow-xl"
+            className="relative flex w-full flex-col items-start"
           >
-            {/* Company */}
-            <h3 className="text-xl font-semibold text-white drop-shadow-sm">{exp.company}</h3>
-
-            {/* Position */}
-            <p className="mt-2 text-white/80 font-medium">{exp.position}</p>
-
-            {/* Duration with gradient pill */}
-            <div
-              className={`mt-4 inline-block px-4 py-1 rounded-full text-sm font-medium text-white
-                bg-gradient-to-r ${exp.color} shadow-md`}
-            >
-              {exp.duration}
+            <span className={`absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gradient-to-r ${exp.color} ring-4 ring-slate-950`} />
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:gap-4">
+              <h3 className="text-md font-semibold text-white drop-shadow-sm">{exp.position}</h3>
+              <p className="text-sm font-medium text-white/60 sm:pt-1">{exp.duration}</p>
             </div>
-
-            {/* Subtle hover glow */}
-            <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/10 to-white/5 opacity-0 hover:opacity-100 transition-opacity"></span>
+            <p className="mt-1 text-white/80 font-medium">{exp.company}</p>
           </div>
         ))}
       </div>

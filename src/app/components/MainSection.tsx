@@ -9,8 +9,8 @@ const MainSection = () => {
     <div className="w-[90%] rounded-xl mx-auto p-6 mt-16 mb-16">
       <Navbar />
       <HeroSection />
-      <Projects />
       <Experience />
+      <Projects />
       <Footer />
     </div>
   );
