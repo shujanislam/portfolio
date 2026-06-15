@@ -8,9 +8,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '/' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Blogs', href: '#blogs' },
+    { name: 'Blogs', href: '/blogs' },
   ];
 
   const socialLinks = [
@@ -83,11 +83,6 @@ const Navbar = () => {
         </div>
         <div className="hidden sm:flex items-center gap-6">
           <p className="text-sm text-gray-400">Assam, India</p>
-          <a href="#footer">
-            <button className="px-5 py-2 bg-gradient-to-r from-indigo-400 to-blue-500 text-white rounded-full font-semibold shadow-lg hover:opacity-90 transition-all">
-              Contact Me
-            </button>
-          </a>
         </div>
 
         {/* Mobile Hamburger */}
